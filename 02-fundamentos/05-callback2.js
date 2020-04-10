@@ -18,6 +18,11 @@ let salarios = [{
 }];
 
 let getEmpleado = (id, callback) => {
+  // let empleadoDB = empleados.find( function (empleado) {
+  //   debugger
+  //   return empleado.id === id
+  // });
+
   let empleadoDB = empleados.find(empleado => empleado.id === id);
 
   if (!empleadoDB) {

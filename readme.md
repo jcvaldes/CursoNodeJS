@@ -41,3 +41,17 @@ para pasar parametros y debuguear
     }
   ]
 }
+
+### Extensiones VSCODE
+
+JavaScript (ES6) code snippets
+Bracket Pair Colorizer 2
+Auto Import
+Auto Close Tag
+JS-CSS-HTML Formatter
+Live Server
+Node.js Modules Intellisense
+pug (jade) formatter
+TypeScript Importer
+VS Code for Node.js - Development Pack
+TSLint

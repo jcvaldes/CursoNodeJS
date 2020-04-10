@@ -45,7 +45,7 @@ let getSalario = (empleado) => {
   });
 }
 
-getEmpleado(21).then(empleado => {
+getEmpleado(1).then(empleado => {
   console.log('Empleado', empleado);
   getSalario(empleado).then(resp => {
     console.log(resp);

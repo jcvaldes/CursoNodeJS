@@ -4,15 +4,110 @@
   // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
+
+
+
     {
       "type": "node",
       "request": "launch",
-      "name": "Launch Program Todo",
+      "name": "Launch Program app blocking",
       "skipFiles": [
         "<node_internals>/**"
       ],
-      "program": "${workspaceFolder}/04-todo/app.js",
-      "args": ["crear", "--d=pasear a oli"]
-    }
+      "program": "${workspaceFolder}/01-blocking-non-blocking/app-blocking.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program app non blocking",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/01-blocking-non-blocking/app-non-blocking.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program app2",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/01-blocking-non-blocking/app2.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program app3",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/01-blocking-non-blocking/app3.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program desestructuracion",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/02-fundamentos/03-desestructuracion.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program callback",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/02-fundamentos/04-callback.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program callback2",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/02-fundamentos/05-callback2.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program promesas",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/02-fundamentos/06-promesas.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program promesas encadenadas",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/02-fundamentos/07-promesas-encadenadas.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program async await 1",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/02-fundamentos/08-async-await.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program async await 2",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/02-fundamentos/09-async-await2.js"
+    },
+    
+
   ]
+
 }
