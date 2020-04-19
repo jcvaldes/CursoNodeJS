@@ -55,3 +55,31 @@ pug (jade) formatter
 TypeScript Importer
 VS Code for Node.js - Development Pack
 TSLint
+
+
+### instalar docker y crear contenedor
+https://mariadb.com/kb/en/installing-and-using-mariadb-via-docker/
+
+docker pull mariadb
+docker run --name mariadb1 -e MYSQL_ROOT_PASSWORD=secretpass -d mariadb --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci MYSQL_DATABASE=resto MYSQL_USER=restousr MYSQL_PASSWORD=secretpass -v -v $HOME/dockers/volumes/mysql:/var/lib/mysql
+
+### ejecutar comandos en mariadb
+docker exec -i mariadb1 sh -c 'exec mysql -uroot -p"secretpass"' < /some/path/on/your/host/all-databases.sql
+
+### Libreria mysql
+https://www.w3schools.com/nodejs/nodejs_mysql.asp
+```
+var mysql = require('mysql');
+
+var con = mysql.createConnection({
+  host: "localhost",
+  user: "yourusername",
+  password: "yourpassword"
+});
+
+con.connect(function(err) {
+  if (err) throw err;
+  console.log("Connected!");
+});
+
+```

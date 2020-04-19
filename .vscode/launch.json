@@ -106,7 +106,15 @@
       ],
       "program": "${workspaceFolder}/02-fundamentos/09-async-await2.js"
     },
-    
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Resto",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/05-resto/index.js"
+    },
 
   ]
 
