@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    debugger
+    var cat = 'Tom'
+    function f1() {
+      // variable shadowing
+      var cat = 'Felix'
+      console.log(cat);
+      console.log(window.cat);
+    }
+
+    function f2() {
+      cat = 'Gardfield'
+      // problema de hoisting. mala práctica 
+      dog = 'Oliver'
+    }
+    console.log(cat);
+    f1()
+    console.log(cat);
+
+    f2()
+    console.log(cat);
+  </script>
+</body>
+</html>

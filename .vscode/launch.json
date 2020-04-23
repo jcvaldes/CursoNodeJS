@@ -7,6 +7,7 @@
 
 
 
+
     {
       "type": "node",
       "request": "launch",
@@ -105,6 +106,15 @@
         "<node_internals>/**"
       ],
       "program": "${workspaceFolder}/02-fundamentos/09-async-await2.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program Scope",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/02-fundamentos/00-scope.js"
     },
     {
       "type": "node",
