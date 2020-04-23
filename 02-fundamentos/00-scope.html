@@ -8,9 +8,12 @@
 <body>
   <script>
     debugger
+    // scope global
     var cat = 'Tom'
     function f1() {
-      // variable shadowing
+      // scope de funcion
+
+      // variable shadowing 
       var cat = 'Felix'
       console.log(cat);
       console.log(window.cat);
@@ -18,9 +21,11 @@
 
     function f2() {
       cat = 'Gardfield'
+      console.log(cat);
       // problema de hoisting. mala práctica 
       dog = 'Oliver'
     }
+    debugger
     console.log(cat);
     f1()
     console.log(cat);
