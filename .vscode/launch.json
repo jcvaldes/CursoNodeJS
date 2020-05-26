@@ -184,6 +184,15 @@
       ],
       "program": "${workspaceFolder}/05-resto/index.js"
     },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Singleton",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/02-fundamentos/patrones/01-singleton.js"
+    },
 
   ]
 

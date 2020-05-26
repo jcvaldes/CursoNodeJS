@@ -46,9 +46,15 @@ module.exports = (sequelize, DataTypes) => {
     //     product.updatedAt = now;
     //   }
     }
-  });
+  );
   Product.associate = function(models) {
     // associations can be defined here
+    // N:M
+    Product.belongsToMany(models.Order, {
+      through: models.ProductOrder,
+      as: 'orders',
+      foreignKey: 'ProductId',
+    });
   };
   return Product;
 };

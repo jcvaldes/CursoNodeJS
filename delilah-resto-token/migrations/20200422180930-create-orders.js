@@ -8,6 +8,10 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
+      UserId: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+      },
       order_status: {
         type: Sequelize.STRING(8),
         allowNull: false,
@@ -18,7 +22,7 @@ module.exports = {
         defaultValue: new Date()
       },
       order_description: {
-        type: Sequelize.DECIMAL(10,2),
+        type: Sequelize.STRING(100),
         allowNull: false
       },
       order_amount: {

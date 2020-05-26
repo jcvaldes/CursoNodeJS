@@ -8,7 +8,7 @@ app.get('/', OrdersController.Fetch)
 
 app.get('/:id', OrdersController.FetchOne)
 
-app.post('/', mdw.verifyToken, OrdersController.Create);
+app.post('/', OrdersController.Create);
 
 app.put('/:id', mdw.verifyToken, OrdersController.Update);
 

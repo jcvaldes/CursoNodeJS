@@ -7,6 +7,10 @@ module.exports = (sequelize, DataTypes) => {
       primaryKey: true,
       type: DataTypes.INTEGER
     },
+    UserId: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
     order_status: {
       type: DataTypes.STRING(8),
       allowNull: false,
@@ -17,7 +21,7 @@ module.exports = (sequelize, DataTypes) => {
       defaultValue: new Date()
     },
     order_description: {
-      type: DataTypes.DECIMAL(10,2),
+      type: DataTypes.STRING,
       allowNull: false
     },
     order_amount: {
@@ -46,6 +50,17 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   Order.associate = function(models) {
     // associations can be defined here
+    // M:N
+    Order.belongsToMany(models.Product, {
+      through: models.ProductOrder,
+      as: 'products',
+      foreignKey: 'OrderId',
+    });
+    //M:1
+    Order.belongsTo(models.User, {
+      foreignKey: 'UserId',
+      targetKey: 'id',
+    });
   };
   return Order;
 };

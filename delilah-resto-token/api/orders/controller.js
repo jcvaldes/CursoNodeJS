@@ -38,27 +38,44 @@ class OrdersController {
   }
   static Create(req, res) {
     const { 
+      UserId,
+      products,
       order_name, 
       order_status,
       order_description,
       order_amount,
       payment_method
     } = req.body
-    
-    db.Order.create({
-      order_name,
-      order_status,
-      order_description,
-      order_amount,
-      payment_method
-    }).then((orderSaved) => {
-      res.status(201).json({
+    db.sequelize.transaction({ autocommit: false }).then(async(t) => {
+      let orderModel = await db.Order.create({
+                                UserId,
+                                order_name,
+                                order_status,
+                                order_description,
+                                order_amount,
+                                payment_method
+                              }, {transaction: t})
+                              
+                              
+                              
+      const productOrders = products.map(i => {
+        return {
+          ProductId: i,
+          OrderId: orderModel.id,
+          createdAt: new Date(),
+          updatedAt: new Date()
+        }
+      });         
+      // await db.ProductOrder.bulkCreate(productOrders,  {
+      //   transaction: t
+      // })       
+      t.commit()
+      return orderModel;        
+    }).then((order) => {
+      res.status(200).json({
         ok: true,
-        order: orderSaved,
+        order: order,
       })
-    })
-    .catch(err => {
-      res.status(400).json({ description: RESPONSES.DB_CONNECTION_ERROR + err })
     })
   }
   static Update(req, res) {
