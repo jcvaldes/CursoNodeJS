@@ -32,7 +32,6 @@ let getEmpleado = (id) => {
 let getSalario = (empleado) => {
   return new Promise((resolve, reject) => {
     let salarioDB = salarios.find(salario => salario.id === empleado.id);
-
     if (!salarioDB) {
       reject(`Error: no se encontro un salario para el empleado ${empleado.nombre}`);
     } else {

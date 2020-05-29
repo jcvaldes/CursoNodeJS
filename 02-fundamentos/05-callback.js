@@ -10,10 +10,10 @@ let getUsuarioById = (id, callback) => {
   }
 }
 
-getUsuarioById(10, (err, usuario) => {
+// funcion principal
+getUsuarioById(10, function(err, usuario) {
   if (err) {
       return console.log(err);
   }
   console.log('Usuario de DB', usuario);
-
 })

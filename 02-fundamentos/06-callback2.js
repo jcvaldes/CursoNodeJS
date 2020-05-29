@@ -17,6 +17,7 @@ let salarios = [{
   salario: 2000
 }];
 
+// funcion callback
 let getEmpleado = (id, callback) => {
   // let empleadoDB = empleados.find( function (empleado) {
   //   debugger
@@ -28,6 +29,7 @@ let getEmpleado = (id, callback) => {
   if (!empleadoDB) {
       callback(`Error: no existe un empleado con id ${id}`);
   } else {
+      // aca ejecuta la funcion que recibo como parametro
       callback(null, empleadoDB);
   }
 }
@@ -44,15 +46,17 @@ let getSalario = (empleado, callback) => {
       });
   }
 }
+
+// function principal
 getEmpleado(2, (err, empleado) => {
   if (err) {
       console.log(err);
   }
   console.log(empleado);
   getSalario(empleado, (err, resp) => {
-      if (err) {
-          console.log(err);
-      }
-      console.log(resp);
+    if (err) {
+        console.log(err);
+    }
+    console.log(resp);
   })
 })

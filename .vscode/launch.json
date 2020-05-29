@@ -4,6 +4,7 @@
   // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
+
     {
       "type": "node",
       "request": "launch",
@@ -21,6 +22,42 @@
         "<node_internals>/**"
       ],
       "program": "${workspaceFolder}/01-blocking-non-blocking/app-non-blocking.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program 00-scope.js",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/02-fundamentos/00-scope.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program 01-letvar.js",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/02-fundamentos/01-letvar.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program 02-objetos.js",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/02-fundamentos/02-objetos.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program 03-arrow.js",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/02-fundamentos/03-arrow.js"
     },
     {
       "type": "node",
@@ -43,29 +80,29 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Launch Program 03-desestructuracion.js",
+      "name": "Launch Program 04-desestructuracion.js",
       "skipFiles": [
         "<node_internals>/**"
       ],
-      "program": "${workspaceFolder}/02-fundamentos/03-desestructuracion.js"
+      "program": "${workspaceFolder}/02-fundamentos/04-desestructuracion.js"
     },
     {
       "type": "node",
       "request": "launch",
-      "name": "Launch Program 04-callback.js",
+      "name": "Launch Program 05-callback.js",
       "skipFiles": [
         "<node_internals>/**"
       ],
-      "program": "${workspaceFolder}/02-fundamentos/04-callback.js"
+      "program": "${workspaceFolder}/02-fundamentos/05-callback.js"
     },
     {
       "type": "node",
       "request": "launch",
-      "name": "Launch Program 05-callback2.js",
+      "name": "Launch Program 06-callback2.js",
       "skipFiles": [
         "<node_internals>/**"
       ],
-      "program": "${workspaceFolder}/02-fundamentos/05-callback2.js"
+      "program": "${workspaceFolder}/02-fundamentos/06-callback2.js"
     },
     {
       "type": "node",
@@ -166,15 +203,7 @@
       ],
       "program": "${workspaceFolder}/02-fundamentos/19-sobreescribir-padre.js"
     },    
-    {
-      "type": "node",
-      "request": "launch",
-      "name": "Launch Program 00-scope.js",
-      "skipFiles": [
-        "<node_internals>/**"
-      ],
-      "program": "${workspaceFolder}/02-fundamentos/00-scope.js"
-    },
+   
     {
       "type": "node",
       "request": "launch",

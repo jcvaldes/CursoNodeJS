@@ -1,4 +1,3 @@
-
 "use strict"
 // scope global
 var cat = 'Tom'
@@ -9,7 +8,6 @@ var cat = 'Tom'
 // Cuando se debuguea en nodejs lo que es F8 es F5
 function f1() {
   // scope de funcion
-
   // variable shadowing 
   var cat = 'Felix'
   console.log(cat);
@@ -23,10 +21,8 @@ function f2() {
   // problema de hoisting. mala práctica 
   // dog = 'Oliver'
 }
-debugger
 console.log(cat);
 f1()
 console.log(cat);
-
 f2()
 console.log(cat);
