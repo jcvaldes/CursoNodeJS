@@ -24,4 +24,8 @@ const misHeroes = heroes.map(item => {
     return item
   }
 });
+// Puedo recorrerlo sin retornar
+heroes.map((item, index) => {
+  console.log(index);
+});
 console.log(misHeroes);

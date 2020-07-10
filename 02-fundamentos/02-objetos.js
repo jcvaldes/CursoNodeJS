@@ -15,12 +15,14 @@ const persona = {
     return new Date().getFullYear() - this.edad
   }
 }
-
 console.log(persona.apellido)
 console.log(persona.ocupaciones[0])
 
 console.log('ciudad', persona['direccion']['ciudad'])
 console.log('ciudad', persona.direccion.ciudad)
-console.log(persona.nacimiento());
+console.log(persona.nacimiento())
+
+const propiedad = "nombre"
+console.log(persona[propiedad])
 
 

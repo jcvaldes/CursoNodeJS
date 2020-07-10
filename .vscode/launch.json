@@ -222,6 +222,15 @@
       ],
       "program": "${workspaceFolder}/02-fundamentos/patrones/01-singleton.js"
     },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch 29-fetch",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/02-fundamentos/29-fetch.js"
+    },
 
   ]
 

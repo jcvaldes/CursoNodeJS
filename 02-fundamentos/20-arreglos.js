@@ -75,5 +75,12 @@ arreglo3.sort(function(a, b) {
 })
 console.log(arreglo3);
 
+const arr = [1,2,3,4]
+// bad 
+// const first = arr[0]
+// const second = arr[0]
+
+// good
+const [first, second] = arr
 
 
