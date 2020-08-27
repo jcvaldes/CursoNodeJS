@@ -50,6 +50,7 @@ class Pizza {
 // const pizza = new Pizza().build()
 const pizzaMuzza = new Pizza()
                   .setCheese()
+                  .setTomato()
 
 
 console.log(pizzaMuzza.build())
