@@ -13,5 +13,5 @@ const personas = [
     aprendiendo: 'Node'
   },
 ]
-let total = personas.reduce((edadTotal, persona) => edadTotal + persona.edad);
+let total = personas.reduce((edadTotal, persona) => edadTotal + persona.edad, 0);
 console.log(total);
