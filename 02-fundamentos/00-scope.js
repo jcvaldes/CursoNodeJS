@@ -8,7 +8,7 @@ var cat = 'Tom'
 // Cuando se debuguea en nodejs lo que es F8 es F5
 function f1() {
   // scope de funcion
-  // variable shadowing 
+  // variable shadowing, no es la global 
   var cat = 'Felix'
   console.log(cat);
   // window funciona solo en el navegador no es asi en node

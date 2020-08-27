@@ -1,3 +1,4 @@
+// esto puede ser una clase abstracta o interfaz si uso typescript
 class Comida {
   preparar() {
     console.log('comida ya esta preparada');
