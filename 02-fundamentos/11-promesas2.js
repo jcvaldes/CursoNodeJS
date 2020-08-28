@@ -45,6 +45,7 @@ let getSalario = (empleado) => {
   });
 }
 
+// Promises hell
 getEmpleado(1).then(empleado => {
   console.log('Empleado', empleado);
   getSalario(empleado).then(resp => {

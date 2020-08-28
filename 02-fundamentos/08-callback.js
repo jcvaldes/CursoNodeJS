@@ -11,6 +11,8 @@ let getUsuarioById = (id, callback) => {
 }
 
 // funcion principal
+// callback es una funcion que se pasa como parametro de otra funcion
+// y en algun momento se va a resolver o arrojar un error
 getUsuarioById(10, function(err, usuario) {
   if (err) {
       return console.log(err);

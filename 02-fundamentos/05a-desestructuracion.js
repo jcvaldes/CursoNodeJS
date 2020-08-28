@@ -9,8 +9,11 @@ let deadpool = {
 
 // let nombre = deadpool.nombre;
 // let apellido = deadpool.apellido;
+// let poder = deadpool.poder;
+
 
 // let { nombre, apellido, poder } = deadpool;
+                                 
               //es un alias
 let { nombre: primerNombre, apellido, poder } = deadpool;
 console.log(primerNombre, apellido, poder);
