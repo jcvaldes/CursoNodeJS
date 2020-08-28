@@ -11,6 +11,7 @@ let deadpool = {
 // let apellido = deadpool.apellido;
 
 // let { nombre, apellido, poder } = deadpool;
+              //es un alias
 let { nombre: primerNombre, apellido, poder } = deadpool;
 console.log(primerNombre, apellido, poder);
 console.log(`${primerNombre} ${apellido}` );

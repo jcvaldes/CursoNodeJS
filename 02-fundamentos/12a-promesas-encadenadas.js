@@ -45,13 +45,12 @@ let getSalario = (empleado) => {
 }
 
 getEmpleado(2)
-  .then(emplode => {
+  .then(empleado => {
     return getSalario(empleado);
   })
   .then(resp => { //este then corresponde a la ultima promesa
     console.log(`El salario de ${resp.nombre} es de ${resp.salario}`);
   })
   .catch(err =>  {
-  debugger
     console.error(err)
   });

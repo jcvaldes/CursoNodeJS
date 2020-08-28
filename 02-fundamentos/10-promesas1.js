@@ -1,5 +1,5 @@
 function getResult() {
-  return new Promise((reject, resolve) => {
+  return new Promise((resolve, reject) => {
     setTimeout(function () {
       console.log('Entra al timeout')
       resolve(2)
@@ -8,12 +8,13 @@ function getResult() {
 }
 
 getResult()
-  .then((data) => {
+  .then(data => {
     console.log(`El resultado es ${data}`)
   })
   .catch((err) => {
     console.error(err)
   })
+
 
 const aplicarDescuento = new Promise((resolve, reject) => {
   setTimeout(() => {
@@ -28,4 +29,6 @@ const aplicarDescuento = new Promise((resolve, reject) => {
 
 aplicarDescuento.then(result => {
   console.log(result)
-})
+}).catch((err) => {
+    console.error(err)
+  })

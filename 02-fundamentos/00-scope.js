@@ -26,3 +26,5 @@ f1()
 console.log(cat);
 f2()
 console.log(cat);
+
+// console.log(dog);

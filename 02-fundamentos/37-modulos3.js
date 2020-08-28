@@ -1,5 +1,3 @@
-export const unaTarea = "nombre tarea"
-
 class Tarea {
   constructor(nombre, prioridad) {
     this.nombre = nombre
