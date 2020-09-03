@@ -19,7 +19,7 @@ cliente('tony stark')
 saludar = 30
 
 // No se puede
-cliente = 30
+// cliente = 30
 
 console.log(saludar)
 
@@ -30,3 +30,16 @@ console.log(saludar)
 const getUser = () => ({ uid: 'AB2332', username: 'scylla'});
 console.log(getUser())
 
+
+// Tarea
+
+ // 1. Transformar a una funcion flecha
+ // 2. Tiene que retornar un objeto implicito
+ // 3. Mostrar el valor retornado de la función
+
+ function getUsuarioActivo(nombre) {
+   return {
+     uid: 'AB123',
+     username: nombre
+   }
+ }
