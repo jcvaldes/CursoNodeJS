@@ -14,3 +14,19 @@ const cliente = function(nombre) {
 }
 
 cliente('tony stark')
+
+// OJO
+saludar = 30
+
+// No se puede
+cliente = 30
+
+console.log(saludar)
+
+// Quiero retornar un objeto en una sola linea. Esta Mal la siguiente linea
+// const getUser = () => { uid: 'AB2332', username: 'scylla'};
+
+// Forma correcta
+const getUser = () => ({ uid: 'AB2332', username: 'scylla'});
+console.log(getUser())
+
