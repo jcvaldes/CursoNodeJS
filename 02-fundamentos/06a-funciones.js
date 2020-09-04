@@ -22,9 +22,10 @@ saludar = 30
 // cliente = 30
 
 console.log(saludar)
+// console.log(cliente)
 
 // Quiero retornar un objeto en una sola linea. Esta Mal la siguiente linea
-// const getUser = () => { uid: 'AB2332', username: 'scylla'};
+//  const getUser = () => { uid: 'AB2332', username: 'scylla'};
 
 // Forma correcta
 const getUser = () => ({ uid: 'AB2332', username: 'scylla'});
