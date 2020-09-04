@@ -1,6 +1,6 @@
 
 
-const activo = false;
+const activo = true;
 
 // let mensaje = '';
 
@@ -10,11 +10,13 @@ const activo = false;
 //     mensaje = 'Inactivo';
 // }
 const mensaje = ( activo ) ? 'Activo' : 'Inactivo'; 
-// const mensaje = ( activo ) ? 'Activo' : null; 
+//_______
+ 
 console.log(mensaje)
 
-// false = 
-// const mensaje = activo && 'Activo';
+
+const mensaje = activo && 'Activo';
+
 
 
 // pegar en la consola del navegador
