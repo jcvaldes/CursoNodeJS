@@ -3,6 +3,7 @@ let persona = {
   apellido: 'Stark',
   clave: 'Ironman',
   edad: 45,
+  rango: 'cientifico',
   getNombre: function() {
       return `${ this.nombre } ${ this.apellido} - clave: ${this.clave}`
   }
@@ -22,8 +23,8 @@ console.log(`${primerNombre} ${apellido}` );
 
 
 // desestructuro
-// const retornaHeroe = (usuario) => {
-//   const { apellido, clave, nombre } = usuario
+// const retornaHeroe = (persona) => {
+//   const { apellido, clave, nombre } = persona
 //   console.log( apellido, clave, nombre )
 // }
 
@@ -34,7 +35,8 @@ const retornaHeroe = ({ nombre, apellido, clave, rango = 'capitan'}) => {
 
 retornaHeroe(persona)
 
-const useContext = ({clave, nombre, edad, rango = 'capitan'})  => {
+
+const useContext = ({clave,  edad})  => {
   return {
     nombreClave: clave,
     anios: edad,
@@ -52,3 +54,4 @@ const useContext = ({clave, nombre, edad, rango = 'capitan'})  => {
 const {nombreClave, anios, latlng: {lat, lng}} = useContext(persona)
 console.log(nombreClave, anios)
 console.log(lat, lng)
+
