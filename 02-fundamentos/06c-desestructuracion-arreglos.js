@@ -1,11 +1,14 @@
 const personajes = ['Ironman', 'Hulk', 'Capitan']
+                    
 const [p1, hulk] = personajes
 console.log(p1)
 
 
 const [,,p3] = personajes
 console.log(p3)
-
+personajes.reverse()
+personajes.sort()
+console.log(personajes)
 
 const retornaArreglo = () => {
   return ['ABC', 123]
