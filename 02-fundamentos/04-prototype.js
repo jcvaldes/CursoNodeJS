@@ -2,7 +2,7 @@ function Tarea(nombre, urgencia) {
   this.nombre = nombre
   this.urgencia = urgencia
 }
-
+// permite crear metodos (acciones que puede realizar un objeto)
 Tarea.prototype.mostrarInfo = function() {
   return `La tarea ${this.nombre} tiene prioridad ${this.urgencia}`
 }

@@ -1,3 +1,5 @@
+const { relative } = require("path");
+
 let persona = {
   nombre: 'Tony',
   apellido: 'Stark',
@@ -16,10 +18,35 @@ let persona = {
 
 // let { nombre, apellido, clave } = persona;
                                  
-              //es un alias
+//es un alias
 let { nombre: primerNombre, apellido, clave } = persona;
 console.log(primerNombre, apellido, clave);
-console.log(`${primerNombre} ${apellido}` );
+console.log( 'Nombre: ' + primerNombre + ' Apellido: ' + apellido);
+
+// template literal
+console.log( `Nombre: ${primerNombre} Apellido ${apellido}` );
+
+// function sumar (a, b) {
+//   return a + b
+// }
+
+// expression function
+// const sumar = function(a, b) {
+//   return a + b
+// } 
+
+// Arrow function
+// const sumar = (a, b) => {
+//    return a + b
+// } 
+
+// expresion lambda
+// const sumar = (a, b) =>  a + b
+
+// console.log(sumar(1,1));
+
+
+
 
 
 // desestructuro
@@ -29,21 +56,21 @@ console.log(`${primerNombre} ${apellido}` );
 // }
 
 // desestructuracion en el argumento de la funcion
-const retornaHeroe = ({ nombre, apellido, clave, rango = 'capitan'}) => {
-  console.log( apellido, clave, nombre, rango )
-}
+// const retornaHeroe = ({ nombre, apellido, clave, rango = 'capitan'}) => {
+//   console.log( apellido, clave, nombre, rango )
+// }
 
-retornaHeroe(persona)
+// retornaHeroe(persona)
 
 
 const useContext = ({clave,  edad})  => {
   return {
-    nombreClave: clave,
-    anios: edad,
-    latlng: {
-      lat: 14.3232,
-      lng: -12.3323
-    }
+     nombreClave: clave,
+     anios: edad,
+     latlng: {
+       lat: 14.3232,
+       lng: -12.3323
+     }
   }
 }
 
