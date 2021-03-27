@@ -1,12 +1,16 @@
 const personajes = ['Ironman', 'Hulk', 'Capitan']
-                    
-const [p1, hulk] = personajes
-console.log(p1)
+      
+// manera fea
+// const ironman = personajes[0];
+
+// manera linda
+// const [p1, hulk] = personajes
+// console.log(p1)
 
 
-const [,,p3] = personajes
-console.log(p3)
-personajes.reverse()
+// const [,,p3] = personajes
+// console.log(p3)
+// personajes.reverse()
 personajes.sort()
 console.log(personajes)
 
@@ -14,10 +18,11 @@ const retornaArreglo = () => {
   return ['ABC', 123]
 }
 
+
 const arr = retornaArreglo()
 console.log(arr)
 
-
+// desestructuro array
 const [letras, numeros] = retornaArreglo()
 console.log(letras, numeros)
 
@@ -34,7 +39,7 @@ state[1]('Clark kent');
 // Tarea: Extraer
 // 1. el primer valor del arr se llamara nombre
 // 2. el segundo se llama setNombre
-const [nombre, setNombres] = useState('Ironman')
+const [nombre, setNombre] = useState('Ironman')
 console.log(nombre)
 setNombre('Tony')
 

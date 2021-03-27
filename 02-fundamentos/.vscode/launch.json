@@ -7,9 +7,11 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Object Constructor",
-      "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}/03-object-constructor"
+      "name": "Launch Program",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/06c-desestructuracion-arreglos.js"
     }
   ]
 }

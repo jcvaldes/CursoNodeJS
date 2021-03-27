@@ -28,3 +28,6 @@ function Tarea(nombre, urgencia) {
 
 const t1 = new Tarea('Aprendes JS', 'Urgente')
 const t2 = new Tarea('Aprendes React', 'Urgente')
+
+console.log(t1.nombre);
+console.log(t2.urgencia);

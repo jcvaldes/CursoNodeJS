@@ -1,5 +1,3 @@
-const { relative } = require("path");
-
 let persona = {
   nombre: 'Tony',
   apellido: 'Stark',
@@ -15,19 +13,18 @@ let persona = {
 // let apellido = persona.apellido;
 // let clave = persona.clave;
 
-
 // let { nombre, apellido, clave } = persona;
-                                 
+
 //es un alias
-let { nombre: primerNombre, apellido, clave } = persona;
-console.log(primerNombre, apellido, clave);
-console.log( 'Nombre: ' + primerNombre + ' Apellido: ' + apellido);
+// let { nombre: primerNombre, apellido, clave } = persona;
+// console.log(primerNombre, apellido, clave);
+// console.log( 'Nombre: ' + primerNombre + ' Apellido: ' + apellido);
 
 // template literal
-console.log( `Nombre: ${primerNombre} Apellido ${apellido}` );
+// console.log( `Nombre: ${primerNombre} Apellido ${apellido}` );
 
 // function sumar (a, b) {
-//   return a + b
+//     return a + b
 // }
 
 // expression function
@@ -37,7 +34,7 @@ console.log( `Nombre: ${primerNombre} Apellido ${apellido}` );
 
 // Arrow function
 // const sumar = (a, b) => {
-//    return a + b
+//   return a + b
 // } 
 
 // expresion lambda
@@ -45,23 +42,17 @@ console.log( `Nombre: ${primerNombre} Apellido ${apellido}` );
 
 // console.log(sumar(1,1));
 
-
-
-
-
 // desestructuro
 // const retornaHeroe = (persona) => {
 //   const { apellido, clave, nombre } = persona
 //   console.log( apellido, clave, nombre )
 // }
-
 // desestructuracion en el argumento de la funcion
 // const retornaHeroe = ({ nombre, apellido, clave, rango = 'capitan'}) => {
 //   console.log( apellido, clave, nombre, rango )
 // }
 
 // retornaHeroe(persona)
-
 
 const useContext = ({clave,  edad})  => {
   return {
@@ -73,10 +64,8 @@ const useContext = ({clave,  edad})  => {
      }
   }
 }
-
-// const avenger = useContext(persona)
-// console.log(avenger)
-
+const avenger = useContext(persona)
+console.log(avenger)
 // Desestructuracion normal y desestructuracion anidada de objetos 
 const {nombreClave, anios, latlng: {lat, lng}} = useContext(persona)
 console.log(nombreClave, anios)

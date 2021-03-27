@@ -24,6 +24,10 @@ saludar = 30
 console.log(saludar)
 // console.log(cliente)
 
+// const getUser = () => { 
+//   return {uid: 'AB2332', username: 'scylla'}
+// };
+
 // Quiero retornar un objeto en una sola linea. Esta Mal la siguiente linea
 //  const getUser = () => { uid: 'AB2332', username: 'scylla'};
 

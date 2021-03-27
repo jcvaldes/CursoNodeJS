@@ -19,7 +19,7 @@ function f2() {
   cat = 'Gardfield'
   console.log(cat);
   // problema de hoisting. mala práctica 
-  // dog = 'Oliver'
+  dog = 'Oliver'
 }
 console.log(cat);
 f1()

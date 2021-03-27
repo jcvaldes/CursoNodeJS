@@ -80,11 +80,20 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Launch Program 04-desestructuracion.js",
+      "name": "Launch Program 05a-desestructuracion.js",
       "skipFiles": [
         "<node_internals>/**"
       ],
-      "program": "${workspaceFolder}/02-fundamentos/04-desestructuracion.js"
+      "program": "${workspaceFolder}/02-fundamentos/05a-desestructuracion.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program 05b-object-literal-enhacement",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/02-fundamentos/05b-object-literal-enhacement.js"
     },
     {
       "type": "node",
