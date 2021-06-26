@@ -8,7 +8,6 @@ class Comida {
 class Hamburguesa extends Comida {
   constructor() {
     console.log('Nueva hamburguesa creada');
-    super()
   }
   ponerKetchup() {
     console.log("Ketchup añadido");
@@ -40,3 +39,10 @@ class CocinaFactory {
 }
 
 const pizza = new CocinaFactory('pizza')
+pizza.preparar();
+
+const hamburguer = new CocinaFactory('hambuguesa')
+hamburguer.preparar();
+hamburguer.ponerKetchup();
+
+debugger
