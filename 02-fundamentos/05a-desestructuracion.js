@@ -5,7 +5,7 @@ let persona = {
   edad: 45,
   rango: 'cientifico',
   getNombre: function() {
-      return `${ this.nombre } ${ this.apellido} - clave: ${this.clave}`
+    return `${ this.nombre } ${ this.apellido} - clave: ${this.clave}`
   }
 };
 
@@ -41,6 +41,7 @@ let persona = {
 // const sumar = (a, b) =>  a + b
 
 // console.log(sumar(1,1));
+debugger
 
 // desestructuro
 // const retornaHeroe = (persona) => {
@@ -65,6 +66,7 @@ const useContext = ({clave,  edad})  => {
   }
 }
 const avenger = useContext(persona)
+
 console.log(avenger)
 // Desestructuracion normal y desestructuracion anidada de objetos 
 const {nombreClave, anios, latlng: {lat, lng}} = useContext(persona)

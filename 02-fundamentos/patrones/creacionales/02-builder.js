@@ -3,10 +3,10 @@
 
 // class Pizza {
 //   constructor(tomato, cheese, bacon, otherIngredients) {
-//     this.tomato = tomato || false
-//     this.cheese = cheese || false
-//     this.bacon = bacon || 0
-//     this.otherIngredients = otherIngredients || []
+//      this.tomato = tomato || false
+//      this.cheese = cheese || false
+//      this.bacon = bacon || 0
+//      this.otherIngredients = otherIngredients || []
 //   }
 // }
 
@@ -47,7 +47,7 @@ class Pizza {
 }
 // puedo crear todas las variaciones de pizza
 
-// const pizza = new Pizza().build()
+const pizza = new Pizza().build()
 const pizzaMuzza = new Pizza()
                   .setCheese()
                   .setTomato()
@@ -61,3 +61,4 @@ const pizzaWithBacon = new Pizza()
                   .addOtherIngredients('aceitunas negras')
 
 console.log(pizzaWithBacon.build())
+debugger

@@ -8,20 +8,20 @@ function saludar(nombre) {
 saludar('Juan')
 
 // expression function
-// cliente('tony stark') Error! no anda
-const cliente = function(nombre) {
-  console.log('nombre cliente' + nombre)
-}
+// cliente('tony stark') // Error! no anda
+// const cliente = function(nombre) {
+//   console.log('nombre cliente' + nombre)
+// }
 
-cliente('tony stark')
+// cliente('tony stark')
 
 // OJO
-saludar = 30
+// saludar = 30
 
 // No se puede
 // cliente = 30
 
-console.log(saludar)
+// console.log(saludar)
 // console.log(cliente)
 
 // const getUser = () => { 
@@ -29,7 +29,7 @@ console.log(saludar)
 // };
 
 // Quiero retornar un objeto en una sola linea. Esta Mal la siguiente linea
-//  const getUser = () => { uid: 'AB2332', username: 'scylla'};
+// const getUser = () => { uid: 'AB2332', username: 'scylla'};
 
 // Forma correcta
 const getUser = () => ({ uid: 'AB2332', username: 'scylla'});

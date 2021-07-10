@@ -1,19 +1,19 @@
-function getResult() {
-  return new Promise((resolve, reject) => {
-    setTimeout(function () {
-      console.log('Entra al timeout')
-      resolve(2)
-    }, 1000)
-  })
-}
+// function getResult() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(function () {
+//       console.log('Entra al timeout')
+//       resolve(2)
+//     }, 1000)
+//   })
+// }
 
-getResult()
-  .then(data => {
-    console.log(`El resultado es ${data}`)
-  })
-  .catch((err) => {
-    console.error(err)
-  })
+// getResult()
+//   .then(data => {
+//     console.log(`El resultado es ${data}`)
+//   })
+//   .catch((err) => {
+//     console.error(err)
+//   })
 
 
 const aplicarDescuento = new Promise((resolve, reject) => {

@@ -20,7 +20,6 @@ let salarios = [{
 // funcion callback
 let getEmpleado = (id, callback) => {
   // let empleadoDB = empleados.find( function (empleado) {
-  //   debugger
   //   return empleado.id === id
   // });
 
@@ -48,6 +47,7 @@ let getSalario = (empleado, callback) => {
 }
 
 // function principal
+// callback hell
 getEmpleado(2, (err, empleado) => {
   if (err) {
       console.log(err);

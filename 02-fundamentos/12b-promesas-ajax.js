@@ -1,5 +1,6 @@
 const descargasUsuarios = (cantidad) =>
   new Promise((resolve, reject) => {
+    debugger
     const api = `https://randomuser.me/api/?results=${cantidad}&nat=us`
 
     const xhr = new XMLHttpRequest()
@@ -22,6 +23,7 @@ const descargasUsuarios = (cantidad) =>
 
 const contenedorApp = document.querySelector("#app")
 
+debugger
 descargasUsuarios(33)
   .then((users) => {
     // let html = `
@@ -35,7 +37,7 @@ descargasUsuarios(33)
     //     </tbody>
     //   </table>
     // `
- 
+    debugger
     contenedorApp.innerHTML = imprimirHtml(users)// html
     console.log(users)
   })

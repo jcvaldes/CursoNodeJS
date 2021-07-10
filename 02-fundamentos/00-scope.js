@@ -11,6 +11,7 @@ function f1() {
   // variable shadowing, no es la global 
   var cat = 'Felix'
   console.log(cat);
+ 
   // window funciona solo en el navegador no es asi en node
   // console.log(window.cat);
 }
@@ -19,7 +20,7 @@ function f2() {
   cat = 'Gardfield'
   console.log(cat);
   // problema de hoisting. mala práctica 
-  dog = 'Oliver'
+  // dog = 'Oliver'
 }
 console.log(cat);
 f1()
