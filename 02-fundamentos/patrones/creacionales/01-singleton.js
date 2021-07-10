@@ -51,8 +51,13 @@ const instancia2 = new MiSingleton('Spiderman')
 const instancia3 = Singleton.getInstance('Ironman')
 const instancia4 = Singleton.getInstance('Spiderman')
 
+console.log(instancia1===instancia2);
+console.log(instancia3===instancia4);
+
+console.log(`Nombre de la instancia1 es: ${instancia1.nombre}`);
+console.log(`Nombre de la instancia1 es: ${instancia1.nombre}`);
+console.log(`Nombre de la instancia1 es: ${instancia1.nombre}`);
 console.log(`Nombre de la instancia1 es: ${instancia1.nombre}`);
 console.log(`Nombre de la instancia2 es: ${instancia2.nombre}`);
 console.log(`Nombre de la instancia3 es: ${instancia3.nombre}`);
 console.log(`Nombre de la instancia4 es: ${instancia4.nombre}`);
-
