@@ -6,6 +6,10 @@ let getNombre = () => {
     });
 };
 
+
+// getNombre().then(nombre => { 
+//     console.log(nombre);
+// })
 let saludo = async() => {
     let nombre = await getNombre();
     return `Hola ${nombre}`;

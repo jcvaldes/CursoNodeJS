@@ -46,8 +46,10 @@ let getSalario = (empleado) => {
 }
 
 let getInfo = async(id) => {
+    debugger
     let empleado = await getEmpleado(id);
     let resp = await getSalario(empleado);
+    // throw new Error('error provocado')
     return resp;
 }
 

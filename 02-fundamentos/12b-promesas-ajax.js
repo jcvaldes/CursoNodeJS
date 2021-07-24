@@ -1,14 +1,15 @@
-const descargasUsuarios = (cantidad) =>
-  new Promise((resolve, reject) => {
-    debugger
+const descargasUsuarios = (cantidad) =>  new Promise((resolve, reject) => {
+    
     const api = `https://randomuser.me/api/?results=${cantidad}&nat=us`
 
     const xhr = new XMLHttpRequest()
 
-    // abre la conexion
+    // configura el request
     xhr.open('GET', api, true)
 
+    // response handler
     xhr.onload = () => {
+      debugger
       if (xhr.status === 200) {
         resolve(JSON.parse(xhr.responseText).results)
       } else {
@@ -17,13 +18,12 @@ const descargasUsuarios = (cantidad) =>
     }
     // opcional
     xhr.onerror = (error) => reject(error)
-
+    // envia el request
     xhr.send()
   })
 
 const contenedorApp = document.querySelector("#app")
 
-debugger
 descargasUsuarios(33)
   .then((users) => {
     // let html = `
@@ -37,7 +37,6 @@ descargasUsuarios(33)
     //     </tbody>
     //   </table>
     // `
-    debugger
     contenedorApp.innerHTML = imprimirHtml(users)// html
     console.log(users)
   })
