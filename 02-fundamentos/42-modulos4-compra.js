@@ -1,4 +1,4 @@
-import Tarea from './38-modulos4-tarea.js'
+import Tarea from './42-modulos4-tarea.js'
 class ComprasPendientes extends Tarea {
   constructor(nombre, prioridad, cantidad) {
     super(nombre, prioridad)

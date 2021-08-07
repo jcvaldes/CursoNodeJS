@@ -1,5 +1,5 @@
 
-import ComprasPendientes from './38-modulos4-compra.js'
+import ComprasPendientes from './42-modulos4-compra.js'
 
 let t1 = new ComprasPendientes('Cafe', 'Alta', 1);
 let t2 = new ComprasPendientes('Pollo', 'Alta', 1);

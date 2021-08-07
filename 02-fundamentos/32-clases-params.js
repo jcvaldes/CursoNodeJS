@@ -24,8 +24,8 @@ class Cuadrado {
   }
 }
 
-function imprimirCuadrado( cuadrado ) {
-  if ( ! (cuadrado instanceof Cuadrado ) ) {
+function imprimirCuadrado(cuadrado) {
+  if (!(cuadrado instanceof Cuadrado)) {
     console.error("El parametro enviado no es un cuadrado")
     return
   }

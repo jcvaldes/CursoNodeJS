@@ -22,8 +22,6 @@ class Persona {
 
 let yo = Persona.crear("juan")
 console.log(yo.decirNombre())
-debugger
 console.log(yo.gritarNombre())
 
 let sol = Persona.crear("Sol")
-debugger
