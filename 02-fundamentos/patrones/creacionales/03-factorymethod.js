@@ -8,6 +8,7 @@ class Comida {
 class Hamburguesa extends Comida {
   constructor() {
     console.log('Nueva hamburguesa creada');
+    super()
   }
   ponerKetchup() {
     console.log("Ketchup añadido");
