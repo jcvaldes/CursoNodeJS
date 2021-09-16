@@ -35,6 +35,23 @@ saludar('Juan')
 const getUser = () => ({ uid: 'AB2332', username: 'scylla'});
 console.log(getUser())
 
+const getCharacter = (personaje) => {
+  console.log(personaje)
+  return (poder) => {
+    switch (poder) { 
+      case 1:
+        console.log('disparar rayos por los ojos');
+        break;
+      case 2:
+        console.log('soplido')
+        break;
+      case 3:
+        console.log('velocidad')
+        break
+    }
+  }
+}
+getCharacter('flash')(3)
 
 // Tarea
 
