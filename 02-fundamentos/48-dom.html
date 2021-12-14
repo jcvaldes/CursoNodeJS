@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        margin: 0;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-color: #f49097;
+        color: #f2f5ff;
+        font-size: 2em;
+        text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+      }
+      .message {
+        font-size: 2.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let messages = [
+        "Todo lo que no te mata te educa",
+        "Conserva tus sueños nunca sabes cuando te harán falta",
+        "Siempre da lo mejor de ti y lo mejor vendrá",
+      ];
+
+      function createMessage() {
+        // creo un elemento para el DOM
+        const appDiv = document.createElement("DIV");
+        appDiv.classList.add("message");
+        // pinto el contenido al div
+        appDiv.innerHTML =
+          messages[Math.floor(Math.random() * messages.length)];
+        // asigno el elemento al body
+        document.body.appendChild(appDiv);
+      }
+
+      createMessage();
+    </script>
+  </body>
+</html>
