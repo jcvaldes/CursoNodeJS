@@ -26,6 +26,12 @@ class Shape {
   getArea() {
     return this.width * this.height;
   }
+  // increaseShapeWidth(shape) {
+  //   if (shape.width === shape.height) {
+  //     shape.setHeight(shape.height + 1);
+  //   }
+  //   shape.setWidth(shape.width + 1);
+  // }
 }
 
 class Rectangle extends Shape {
@@ -58,6 +64,9 @@ const square = new Square(5, 5);
 increaseShapeWidth(rectangle1);
 
 increaseShapeWidth(rectangle2);
+
+// NOOOOOOOOO
+// rectangle2.increaseShapeWidth(rectangle2);
 
 increaseShapeWidth(square);
 
