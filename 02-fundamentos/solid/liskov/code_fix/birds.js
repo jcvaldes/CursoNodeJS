@@ -10,31 +10,55 @@ class Animal {
     }
   }
 
-  fly() {
-    console.log("I can not fly");
-  }
-  swim() {
-    console.log("I can not swim");
-  }
+  run() {}
 }
-class Duck extends Animal {
-  quack() {
-    console.log("I can quack");
-  }
-  fly() {
-    console.log("I can fly");
-  }
-}
-
-class Penguin extends Animal {
+class Swim extends Animal {
   swim() {
     console.log("I can swim");
   }
 }
 
+class FlySwim extends Animal {
+  fly() {
+    console.log("I can fly");
+  }
+  swim() {
+    console.log("I can swim");
+  }
+}
+// admas de volar puede nadar y como en javascript no tengo interfaces
+// hago una clase que implemente los 2 metodos y la hago heredar de ahi
+// lo ideal es usar typescript para hacer uso de interfaces
+class Duck extends FlySwim {
+  constructor() {
+    super();
+    this.run();
+  }
+  quack() {
+    console.log("I can quack");
+  }
+  run() {
+    console.log("Duck is running");
+  }
+}
+
+class Penguin extends Swim {
+  constructor() {
+    super();
+    this.run();
+  }
+  run() {
+    console.log("Penguin is running");
+  }
+}
+
+const birdType = {
+  Duck,
+  Penguin,
+};
 class BirdFactory {
-  makeBird(bird) {
-    switch (bird.constructor) {
+  makeBird(birdType) {
+    switch (birdType) {
       case Duck:
         return new Duck();
       case Penguin:
@@ -43,15 +67,16 @@ class BirdFactory {
   }
 }
 
-const duck = new Duck();
-const penguin = new Penguin();
-
 const birdFactory = new BirdFactory();
 
-const bird1 = birdFactory.makeBird(duck);
-const bird2 = birdFactory.makeBird(penguin);
+const bird1 = birdFactory.makeBird(birdType.Duck);
+const bird2 = birdFactory.makeBird(birdType.Penguin);
 
 bird1.fly();
+bird1.quack();
 bird1.swim();
+
 bird2.swim();
-bird2.fly();
+
+// Falla porque no la necesita ya que es un pinguino y no puede volar
+// bird2.fly();
