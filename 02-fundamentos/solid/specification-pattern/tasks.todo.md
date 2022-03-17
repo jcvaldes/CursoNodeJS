@@ -1,0 +1,12 @@
+- iniciar proyecto con yarn
+- instalar dependencias
+- typescript
+- jest
+- ts-jest
+- @types/jest
+- @types/node
+- Crear nuestra clase abstracta entity
+- Crear interfaz usuario
+- Crear interfaz de usuario
+- Crear clase specification
+- Crear clase de sintomas specification
