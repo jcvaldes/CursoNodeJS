@@ -2,7 +2,7 @@ class Store {
   constructor(user) {
     // el problema es que tengo que cambiar en todos lados donde se
     // usa el metodo StripePaymentProcessor
-    this.paymentProcessor = new StripePaymentProcessor(user);
+    this.paymentProcessor = new PaymentProcessor(user);
   }
   purchaseBike(quantity) {
     this.paymentProcessor.pay(200 * quantity);

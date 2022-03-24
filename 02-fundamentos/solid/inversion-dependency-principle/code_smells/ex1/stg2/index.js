@@ -1,23 +1,23 @@
 class Store {
   constructor(user) {
     // this.stripe = new Stripe(user);
-    this.paypal = new Paypal();
+    this.paypal = new Paypal(user);
     this.user = user;
   }
   purchaseBike(quantity) {
     // this.stripe.makePayment(200 * quantity * 100);
-    this.paypal.makePayment(this.user, 200 * quantity);
+    this.paypal.makePayment(200 * quantity);
   }
   purchaseHelmet(quantity) {
     // this.stripe.makePayment(15 * quantity * 100);
-    this.paypal.makePayment(this.user, 15 * quantity);
+    this.paypal.makePayment(15 * quantity);
   }
 }
-class Stripe {
-  makePayment(user, amountInCents) {
-    console.log(`${user} made a payment of ${amountInCents / 100} with Paypal`);
-  }
-}
+// class Stripe {
+//   makePayment(user, amountInCents) {
+//     console.log(`${user} made a payment of ${amountInCents / 100} with Paypal`);
+//   }
+// }
 
 class Paypal {
   constructor(user) {
@@ -25,7 +25,7 @@ class Paypal {
   }
   makePayment(amountInDollars) {
     console.log(
-      `${this.user} made a payment of $${amountInDollars / 100} with Paypal`
+      `${this.user} made a payment of $${amountInDollars} with Paypal`
     );
   }
 }

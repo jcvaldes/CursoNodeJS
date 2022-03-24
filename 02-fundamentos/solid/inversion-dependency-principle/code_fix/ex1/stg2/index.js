@@ -53,8 +53,8 @@ class Paypal {
 }
 
 // Puedo cambiar el procesador de pago desde el cliente y todo sigue andando
-// const store = new Store(new PaypalPaymentProcessor("John"));
-const store = new Store(new StripePaymentProcessor("John"));
+const store = new Store(new PaypalPaymentProcessor("John"));
+const store1 = new Store(new StripePaymentProcessor("John"));
 
 store.purchaseBike(2);
-store.purchaseHelmet(2);
+store1.purchaseHelmet(2);

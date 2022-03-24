@@ -1,12 +1,7 @@
-/*
-Bonus:
-1. What's the Time complexity?
-2. What's the Space complexity?
-*/
+const words = ["kellogg", "go", "hola", "lego", "hug", "kocomo", "hello"];
+const letters = ["a", "h", "l", "e", "l", "o", "g", "k"];
 
-words = ["kellogg", "go", "hola", "lego", "hug", "kocomo", "hello"];
-letters = ["a", "h", "l", "e", "l", "o", "g", "k"];
-
+let permutations = [];
 function permutation(chain) {
   if (typeof chain != "string") {
     throw TypeError("El argumento debe ser una cadena de caracteres");
@@ -27,16 +22,27 @@ function permutation(chain) {
     );
 }
 
-const findWord = (word) => {};
 const toString = () => {
   // Mostrar la palabra mas larga que se encontro con la cadena de letras en words
 };
 
+const app = () => {
+  let chain = "";
+  for (let i = 0; i < letters.length; i++) {
+    chain = chain.length === 0 ? letters[0] : chain + letters[i];
+    console.log(chain);
+    if (chain.length > 1) {
+      permutations.push(permutation(chain));
+      console.log(permutations);
+    } else {
+      permutations.push([chain]);
+    }
+  }
+};
+
 try {
-  const chain = letters.join(", ").replaceAll(", ", "");
-  let permutations = [];
-  permutations = [...permutation(chain)];
-  console.log(permutations);
+  app();
+  // getIntersection();
 } catch (e) {
   console.error(`Error: ${e.message}`);
 }

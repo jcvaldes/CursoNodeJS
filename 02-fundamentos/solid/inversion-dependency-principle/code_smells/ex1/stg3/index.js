@@ -1,12 +1,16 @@
 class Store {
+  paymentProcessors = {
+    Stripe,
+    Paypal,
+  };
   constructor(user) {
     this.paymentProcessor = new PaymentProcessor(user);
   }
   purchaseBike(quantity) {
-    this.paymentProcessor.pay(200 * quantity, paymentProcessors.STRIPE);
+    this.paymentProcessor.pay(200 * quantity, 1);
   }
   purchaseHelmet(quantity) {
-    this.paymentProcessor.pay(15 * quantity, paymentProcessors.STRIPE);
+    this.paymentProcessor.pay(15 * quantity, 2);
   }
 }
 
@@ -26,21 +30,17 @@ class Paypal {
     );
   }
 }
-const paymentProcessors = {
-  Stripe,
-  Paypal,
-};
 
 class PaymentProcessor {
   constructor(user) {
     this.user = user;
   }
   pay(amountInDollars, type) {
-    if (type === paymentProcessors.STRIPE) {
+    if (type === 1) {
       console.log(
         `${this.user} made a payment of ${amountInDollars} with Stripe`
       );
-    } else if (type === paymentProcessors.Paypal) {
+    } else if (type === 2) {
       console.log(
         `${this.user} made a payment of $${amountInDollars} with Paypal`
       );

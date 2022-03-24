@@ -20,16 +20,16 @@ class Stripe {
   }
 }
 
-class Paypal {
-  constructor(user) {
-    this.user = user;
-  }
-  makePayment(amountInDollars) {
-    console.log(
-      `${this.user} made a payment of $${amountInDollars / 100} with Paypal`
-    );
-  }
-}
+// class Paypal {
+//   constructor(user) {
+//     this.user = user;
+//   }
+//   makePayment(amountInDollars) {
+//     console.log(
+//       `${this.user} made a payment of $${amountInDollars / 100} with Paypal`
+//     );
+//   }
+// }
 
 const store = new Store("John");
 store.purchaseBike(2);
